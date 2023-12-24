@@ -23,7 +23,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  min-width: 320px;
+  /*min-width: 320px;*/
   min-height: 100vh;
 }
 
@@ -109,8 +109,8 @@ body {
 }
 
 .square {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border: 2px solid #eee;
   border-radius: 10px;
   display: grid;
@@ -122,4 +122,5 @@ body {
 .game .square {
   font-size: 75px; /* Adjust the font size as needed */
 }
+
 
