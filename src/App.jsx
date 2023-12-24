@@ -49,8 +49,8 @@ function App() {
   };
 
   return (
-    <main className="board ">
-      <h1 className="font-bold text-6xl text-center text-zinc-100">Tic Tac Toe</h1>
+    <main className="board">
+      <h1 className="font-bold text-6xl text-center text-zinc-100 pt-16">Tic Tac Toe</h1>
       <button className="text-white font-semibold bg-gradient-to-r from-green-500 via-green-500 to-green-600 hover:bg-gradient-to-br  shadow-lg shadow-green-500/50 mb-6 mt-3 px-6 py-2.5 rounded-2xl" onClick={resetGame}>Reiniciar</button>
       <section className="game ">
         {board.map((_, index) => (
