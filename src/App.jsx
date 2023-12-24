@@ -4,6 +4,7 @@ import { Square } from "./components/Square";
 import { TURNS } from "./constants";
 import { checkWinnerFrom, checkEndGame } from "./logic/board";
 import { WinnerModal } from "./components/WinnerModal";
+import './App.css'
 function App() {
   const [board, setBoard] = useState(() => {
     const boardFromStorage = window.localStorage.getItem('board');
@@ -48,9 +49,9 @@ function App() {
   };
 
   return (
-    <main className="board">
-      <h1>Tic Tac Toe</h1>
-      <button onClick={resetGame}>Reiniciar</button>
+    <main className="board sm:mx-2">
+      <h1 className="font-bold text-6xl text-center text-zinc-100">Tic Tac Toe</h1>
+      <button className="text-white font-semibold bg-gradient-to-r from-green-500 via-green-500 to-green-600 hover:bg-gradient-to-br  shadow-lg shadow-green-500/50 mb-6 mt-3 px-6 py-2.5 rounded-2xl" onClick={resetGame}>Reiniciar</button>
       <section className="game">
         {board.map((_, index) => (
           <Square key={index} index={index} updateBoard={updateBoard}>
