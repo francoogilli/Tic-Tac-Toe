@@ -112,6 +112,7 @@ body {
   gap: 20px;
 }
 
+
 .winner .win {
   margin: 0 auto;
   background-color: rgb(0, 110, 255);
@@ -132,3 +133,8 @@ body {
   cursor: pointer;
   font-size: 48px;
 }
+
+.game .square {
+  font-size: 75px; /* Adjust the font size as needed */
+}
+
