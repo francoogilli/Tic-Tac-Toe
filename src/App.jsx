@@ -50,7 +50,7 @@ function App() {
 
   return (
     <main className="board">
-      <h1 className="font-bold text-6xl text-center text-zinc-100 pt-16">Tic Tac Toe</h1>
+      <h1 className="font-bold text-6xl text-center text-zinc-100 sm:pt-16 lg:pt-7">Tic Tac Toe</h1>
       <button className="text-white font-semibold bg-gradient-to-r from-green-500 via-green-500 to-green-600 hover:bg-gradient-to-br  shadow-lg shadow-green-500/50 mb-6 mt-3 px-6 py-2.5 rounded-2xl" onClick={resetGame}>Reiniciar</button>
       <section className="game ">
         {board.map((_, index) => (
@@ -60,7 +60,7 @@ function App() {
         ))}
       </section>
 
-      <section className="turn">
+      <section className="turn gap-3">
         <Square isSelected={turn === TURNS.X}>{TURNS.X}</Square>
         <Square isSelected={turn === TURNS.O}>{TURNS.O}</Square>
       </section>
