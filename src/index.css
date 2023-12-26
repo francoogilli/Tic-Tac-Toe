@@ -72,7 +72,7 @@ body {
 
 .square.is-selected {
   color: #fff;
-  background: #0b40ff;
+  background: #2554ff;
 }
 
 .winner {
@@ -119,6 +119,10 @@ body {
   place-items: center;
   cursor: pointer;
   font-size: 48px;
+}
+
+.square:hover {
+  background-color: rgb(33, 30, 30);
 }
 
 .game .square {
