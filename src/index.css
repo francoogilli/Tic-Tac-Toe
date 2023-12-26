@@ -72,7 +72,7 @@ body {
 
 .square.is-selected {
   color: #fff;
-  background: #2554ff;
+  background: #3660f9;
 }
 
 .winner {
@@ -130,3 +130,29 @@ body {
 }
 
 
+.wavy {
+  position: relative;
+
+}
+
+.wavy span {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      animation: animate 3s ease-in-out infinite;
+      animation-delay: calc(.9s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+      transform: translateY(0px);
+  }
+
+  20% {
+      transform: translateY(-20px);
+  }
+
+  40%,100% {
+      transform: translateY(0px);
+  }
+}
