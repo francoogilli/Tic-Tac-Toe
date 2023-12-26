@@ -51,11 +51,9 @@ function App() {
   return (
     <main className="board">
       <div className="wavy font-extrabold text-6xl text-center text-zinc-100 pt-16 lg:pt-7 lg:pb-4 relative">
-        <span style={{ animation: 'none' }}>¡</span>
         <span style={{ '--i': 1}}>Tic</span> {' '}
         <span style={{ '--i': 2}}>Tac</span> {' '}
         <span style={{ '--i': 3 }}>Toe</span>
-        <span style={{ animation: 'none' }}>!</span>
       </div>
 
       
